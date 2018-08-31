@@ -1,0 +1,99 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  /* background: rgba(83, 67, 12, 0.644); */
+}
+body,
+html {
+  height: 95%;
+}
+
+/* Making my site responsive ;) */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+/* For desktop: */
+
+.col-3 {
+  width: 30%;
+}
+
+.col-6 {
+  width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/* end of responsive basic parameters */
+
+
+.header {
+  background: #fff;
+  height: 50px;
+  width: 100%;
+
+  box-shadow: 10px 0 10px grey;
+}
+
+/* Created this class to group the Icon, search bar and button in header */
+/* .box {
+  float: left;
+  width: 33.33%;
+  padding: 0.5% 0 0.5% 0;
+} */
+
+/* Just to make the button more handsome */
+.col-6 #button {
+  background: gray;
+  border: 0;
+  height: 25px;
+  margin: 0;
+}
+
+.col-6 #researchBar{
+margin: 0 0 0.1% 0;
+height: 35px;
+
+}
+
+/* Yt Logo */
+.col-3 #logoYt {
+  height: 25px;
+  display: inline-block;
+  padding-left: 4%;
+}
+#footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 5%;
+  width: 100%;
+
+  text-align: center;
+  background: rgba(201, 200, 198, 0.918);
+  color: rgb(99, 76, 1);
+  font-family: "Raleway", sans-serif;
+
+  padding-top: 0.3%;
+}
+#footer a {
+  color: rgb(99, 76, 1);
+  text-decoration: none;
+}
+#footer a:hover {
+  color: rgb(182, 1, 1);
+}
+
