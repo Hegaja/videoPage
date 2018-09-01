@@ -1,6 +1,6 @@
 # videoPage
 
-Just a simple copy off [Youtube](https://www.youtube.com).
+Just a simple copy of [Youtube](https://www.youtube.com).
 
 It is not complete and will be completed once responsive concepts are learned.
 
