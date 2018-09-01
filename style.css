@@ -32,13 +32,12 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
 }
 /* end of responsive basic parameters */
-
 
 .header {
   background: #fff;
@@ -48,30 +47,43 @@ html {
   box-shadow: 10px 0 10px grey;
 }
 
-/* Created this class to group the Icon, search bar and button in header */
-/* .box {
-  float: left;
-  width: 33.33%;
-  padding: 0.5% 0 0.5% 0;
-} */
 
 /* Just to make the button more handsome */
 .col-6 #button {
-  background: gray;
+  background: rgb(200, 200, 200);
   border: 0;
-  height: 25px;
-  margin: 0;
+  height: 35px;
+  width: 50px;
+  margin-left: -6px;
+  display: inline-block;
+  margin-top: -20px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVEhL7ZS/SsNQGMVbB9HJP4uOCiI4iyAu2k0foINThiYNCS55goC1gy5OurjpE+hoB93EZ7DdSlcRRUFF/X1yKmKbGKvi4g8O93Lu951709wm9xfkwzAcd113MoqiQXm94zjOsOd5VdQsl8vPJuYPjDXf95dU9jVKpdIMIQ0F3qFTdIhXl/fEvKLybNA0hC4sgOY9O7mWXsFbQS2th7I/h+JqO1RWB/ZE1NxQc8V8VHYqeYqb6DYIghF5XSF4UwdwZSXD7mMqPpGVCDUF1e7KSobgKRUfyUqE6zdrtWhfVjJ2Twm9Rw1ZiVDjKHhDVjo0HKthWVY37F2cWx3jgrx0KFykwe5py96+7DfiOO5jbVub12Rng8Z1neYabaECmkP2+GcKtfWA33pabdmgaY3my3bIB9UI9DR/5C++qrZs2OVnA5fmHcYDVCFw3tbso2ShPYenYWH/4R28D+dd1IvFYr+Wvo+FWyjjhKyfg+/3gKa/SS73AhxY9GbAY3pvAAAAAElFTkSuQmCC");
+  background-position: 12px 7px;
+
+  background-repeat: no-repeat;
+}
+#button::-moz-focus-inner {
+  border: 0;
 }
 
-.col-6 #researchBar{
-margin: 0 0 0.1% 0;
-height: 35px;
+.col-6 #researchBar {
+  /* margin: -50px 0 0.1% 0; */
+  margin-top: -20px;
+  height: 35px;
+  width: 45%;
+  padding-left: 3px;
 
+  display: inline-block;
+
+  border-radius: 0;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
 }
 
 /* Yt Logo */
 .col-3 #logoYt {
   height: 25px;
+  width: 180px;
   display: inline-block;
   padding-left: 4%;
 }
@@ -97,3 +109,16 @@ height: 35px;
   color: rgb(182, 1, 1);
 }
 
+.col-6 #videoPlayer {
+  margin-left: 10%;
+}
+
+#videoArea h3 {
+  margin-left: 10%;
+}
+
+#otherVideos {
+
+  display: inline-block;
+  margin: 0;
+}
